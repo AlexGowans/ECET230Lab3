@@ -22,7 +22,7 @@ namespace CalculatorGUI
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        bool easterFlag = false;
+        bool easterFlag = false;    //used to activate the easter egg
 
         public MainPage()
         {
@@ -30,12 +30,15 @@ namespace CalculatorGUI
         }        
 
         private void btnAdd_Click(object sender, RoutedEventArgs e) {
-            double num1 = tryConvertTxtBoxNum1();
+            //Get text box value, while checking for error
+            double num1 = tryConvertTxtBoxNum1();  
             double num2 = tryConvertTxtBoxNum2();
 
+            //Create Answer
             double answer = num1 + num2;
             txtAnswer.Text = Convert.ToString(answer);
 
+            //This fails the easter eggg
             easterFlag = false;
         }
 
@@ -63,14 +66,14 @@ namespace CalculatorGUI
             double num1 = tryConvertTxtBoxNum1();
             double num2 = tryConvertTxtBoxNum2();
 
-            if (num2 != 0) {    //
+            if (num2 != 0) {    //check not dividing by 0
                 double answer = num1 / num2;
                 txtAnswer.Text = Convert.ToString(answer);
                 easterFlag = false;
             }
             else {  //cant divide by 0
                 txtAnswer.Text = "Cannot / by 0";
-                easterFlag = true;
+                easterFlag = true; //the user can do the easter egg now
             }
         }
 
@@ -78,12 +81,12 @@ namespace CalculatorGUI
             double num1 = tryConvertTxtBoxNum1();
             double num2 = tryConvertTxtBoxNum2();
 
-            double answer = Math.Pow(num1,num2);
+            double answer = Math.Pow(num1,num2); //num1^num2
             txtAnswer.Text = Convert.ToString(answer);
             easterFlag = false;
         }
 
-        private void btnHello_Click(object sender, RoutedEventArgs e) {
+        private void btnHello_Click(object sender, RoutedEventArgs e) { //easter egg button
             double num1 = tryConvertTxtBoxNum1();
             double num2 = tryConvertTxtBoxNum2();
 
@@ -95,7 +98,7 @@ namespace CalculatorGUI
             }
         }
 
-        private void btnAnsNum1_Click(object sender, RoutedEventArgs e) {
+        private void btnAnsNum1_Click(object sender, RoutedEventArgs e) { //add previous answer to input box
             txtBoxNum1.Text = txtAnswer.Text;
         }
 
