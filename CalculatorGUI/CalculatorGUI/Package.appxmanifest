@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="3848cc60-0274-4cbc-a892-aa937340f0e8"
-    Publisher="CN=HvnlyMitsu"
+    Name="1afed556-dcdc-4d28-a26f-b48f8d185654"
+    Publisher="CN=Elex"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="3848cc60-0274-4cbc-a892-aa937340f0e8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="1afed556-dcdc-4d28-a26f-b48f8d185654" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CalculatorGUI</DisplayName>
-    <PublisherDisplayName>HvnlyMitsu</PublisherDisplayName>
+    <PublisherDisplayName>Elex</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
