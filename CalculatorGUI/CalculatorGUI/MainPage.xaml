@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="CalculatorGUI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CalculatorGUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="txtBoxNum1" HorizontalAlignment="Left" Margin="148,166,0,0" Text="0" VerticalAlignment="Top" Height="92" Width="400" FontSize="48" TextWrapping="Wrap"/>
+        <TextBox x:Name="txtBoxNum2" HorizontalAlignment="Left" Margin="148,340,0,0" Text="0" VerticalAlignment="Top" Height="92" Width="400" FontSize="48" TextWrapping="Wrap"/>
+        <TextBlock x:Name="txtAnswer" HorizontalAlignment="Left" Margin="148,683,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="400" FontSize="48"/>
+        <TextBlock x:Name="txtAnswer_Copy" HorizontalAlignment="Left" Margin="148,569,0,0" Text="Answer:" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="400" FontSize="48"/>
+
+
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="600,60,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnAdd_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="850,60,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnMinus_Click"/>
+        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="600,310,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnMultiply_Click"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="850,310,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnDivide_Click"/>
+        <Button x:Name="btnPower" Content="^" HorizontalAlignment="Left" Margin="600,560,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnPower_Click"/>
+        <Button x:Name="btnHello" Content="Hello" HorizontalAlignment="Left" Margin="850,560,0,0" VerticalAlignment="Top" Height="200" Width="200" FontSize="72" Click="btnHello_Click"/>
+
+        <Button x:Name="btnAnsNum1" Content="Ans" HorizontalAlignment="Left" Margin="43,160,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="36" Click="btnAnsNum1_Click"/>
+        <Button x:Name="btnAnsNum2" Content="Ans" HorizontalAlignment="Left" Margin="43,336,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="36" Click="btnAnsNum2_Click"/>
+
+
+    </Grid>
+</Page>
