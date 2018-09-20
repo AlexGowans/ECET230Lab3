@@ -87,14 +87,11 @@ namespace CalculatorGUI
         }
 
         private void btnHello_Click(object sender, RoutedEventArgs e) { //easter egg button
-            double num1 = tryConvertTxtBoxNum1();
-            double num2 = tryConvertTxtBoxNum2();
-
             if(easterFlag) {
-                txtAnswer.Text = "Alex Gowans";
+                txtAnswer.Text = "Alex Gowans"; //easter egg show name
             }
             else {
-                txtAnswer.Text = "Hello there";
+                txtAnswer.Text = "Hello there"; //otherwise say hello
             }
         }
 
